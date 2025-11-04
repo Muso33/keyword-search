@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keyword Surprise</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Keyword Surprise</h1>
+    <form id="searchForm">
+      <input id="q" name="q" placeholder="Type a keyword (eg. 'cats', 'eiffel tower')" required />
+      <select id="type" name="type">
+        <option value="image">Image</option>
+        <option value="link">Link</option>
+      </select>
+      <select id="provider" name="provider">
+        <option value="auto">Auto (best available)</option>
+        <option value="google">Google (requires API)</option>
+        <option value="serpapi">SerpAPI (optional)</option>
+        <option value="duckduckgo">DuckDuckGo</option>
+      </select>
+      <button type="submit">Surprise me!</button>
+      <button id="another" type="button">Another</button>
+    </form>
+
+    <div id="status" class="muted"></div>
+    <div id="result"></div>
+    <footer class="muted">Plays in the browser on iOS — open the site in Safari or any browser.</footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
